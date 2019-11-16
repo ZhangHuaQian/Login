@@ -16,6 +16,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1TQFoPbMkdwG6kxOltjkyGCoHVn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -71,10 +72,22 @@
       <workItem from="1573718922726" duration="24000" />
       <workItem from="1573785990025" duration="24000" />
       <workItem from="1573818780707" duration="39000" />
+      <workItem from="1573892565458" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

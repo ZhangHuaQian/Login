@@ -34,8 +34,8 @@
             return {
                 labelPosition: 'right',
                 loginform:{
-                    user_name:'',
-                    user_password:''
+                    user_name:'ZHQuser',
+                    user_password:'ZHQ123456789'
                 },
                  loginFormrules: {
                      user_name: [
@@ -69,7 +69,10 @@
                 if(this.loginform.user_name==='ZHQuser'&&this.loginform.user_password==='ZHQ123456789'){
                     this.$message.success('登录成功');
                     window.sessionStorage.setItem('token',this.loginToken.token);
-                    this.$router.push('/home')
+                    // this.$router.push('../../src/testHtml/elements/elements_xgjc.html')
+                    window.location.href=
+                    'https://zhanghuaqian.github.io/2019ABC/index.htm'
+                    
                 }
                 else{
                     this.$message.error('登录失败');

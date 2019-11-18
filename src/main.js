@@ -30,6 +30,7 @@ import router from './router.js'
 
 
 
+
 //导入App.vue
 import app from './App.vue';
 var vm = new Vue({

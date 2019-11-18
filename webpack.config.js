@@ -9,25 +9,24 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 // const ExtractTextPlugin=require('extract-text-webpack-plugin')
 
 module.exports={
-    entry:'./src/main.js',
+    entry: './src/main.js',
+  
     output:{
-        path:path.resolve(__dirname,'dist'),
-        filename:'bundle.js'
+      filename: '[name].js',
+      path: __dirname + '/dist'
     },
     plugins: [new HtmlWebpackPlugin({
         title:'mypcj',
         filename:'index.html',
         template:'template.html'
     }),
-    // new MiniCssExtractPlugin({
-    //   // Options similar to the same options in webpackOptions.output
-    //   // both options are optional
-    //   filename: devMode ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    // }),
+   
+    
+   
+    
     
     new VueLoaderPlugin(),
-    // new ExtractTextPlugin('[name].css')
+    
   ],
     
     mode: 'production',
@@ -46,24 +45,11 @@ module.exports={
               options: {
                 attrs: [':data-src']
               }
-            }
+            },
+            exclude:/testHtml/
           },
 
-          // {//url-loader
-          //    test: /\.(jpe?g|png|gif|ttf|eot|svg|woff|woff2)$/i,
-          //     use:[
-          //       {loader: "url-loader"},
-                  
-          //         {loader: "file-loader"},
-          //         {options: {
-          //           limit: 8192 }  }
-                  
-                 
-                
-          //     ]
-                 
-              
-          //   },
+         
 
           {
             test: /\.(jpe?g|png|gif|ttf|eot|svg|woff|woff2)$/,
@@ -84,7 +70,7 @@ module.exports={
              } ,
 
           {test: /\.m?js$/,
-            exclude: /(node_modules|bower_components)/,
+            exclude: /(node_modules|bower_components|testHtml)/,
             use: {
               loader: 'babel-loader',
               options: {
@@ -97,7 +83,7 @@ module.exports={
             use: [
               { loader: "style-loader" },
               { loader: "css-loader" }
-            ],exclude:/node_modules/
+            ],exclude:/(node_modules|testHtml)/
           },
 
 
@@ -109,20 +95,7 @@ module.exports={
           
           // 
           
-          // {
-          //   test: /\.(sa|sc|c)ss$/,
-          //   use: [
-          //     {
-          //       loader: MiniCssExtractPlugin.loader,
-          //       options: {
-          //         hmr: process.env.NODE_ENV === 'development',
-          //       },
-          //     },'style-loader',
-          //     'css-loader',
-          //     'postcss-loader',
-          //     'sass-loader',
-          //   ],
-          // },
+          
           
           {//sass-loader
             test: /\.scss$/,
@@ -136,40 +109,10 @@ module.exports={
           },
 
 
-          // {
-          //   test: /\.css$/,
-          //   use: [
-          //     'style-loader',
-          //     { loader: 'css-loader', options: { importLoaders: 1 } },
-          //     { loader: 'postcss-loader', options: {
-          //       ident: 'postcss',
-          //       plugins: () => [
-          //         postcssPresetEnv(/* pluginOptions */)
-          //       ]
-          //     } }
-          //   ]
-          // },
+        
 
 
-          // {
-          //   test: /\.css$/,
-          //   exclude: /node_modules/,
-          //   use: [
-          //     {
-          //       loader: 'style-loader',
-          //     },
-          //     {
-          //       loader: 'css-loader',
-          //       options: {
-          //         importLoaders: 1,
-          //       }
-          //     },
-          //     {
-          //       loader: 'postcss-loader'
-          //     }
-          //   ]
-          // }
-
+          
           
         ]
       }

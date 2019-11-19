@@ -3,7 +3,7 @@
     <div class="login_container" >
         <div class="login_box" >
             <div class="acatar_box" >
-                <img src="../../static/icon.jpg" alt="" class="" >
+                <img src="../../static/loginicon.jpg" alt="" class="" >
             </div>
 
             
@@ -34,8 +34,8 @@
             return {
                 labelPosition: 'right',
                 loginform:{
-                    user_name:'ZHQuser',
-                    user_password:'ZHQ123456789'
+                    user_name:'',
+                    user_password:''
                 },
                  loginFormrules: {
                      user_name: [

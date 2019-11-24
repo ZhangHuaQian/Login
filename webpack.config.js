@@ -52,12 +52,12 @@ module.exports={
          
 
           {
-            test: /\.(jpe?g|png|gif|ttf|eot|svg|woff|woff2)$/,
+            test: /\.(jpg|jpeg|png|gif|ttf|eot|svg|woff|woff2)$/,
             use: [
               {
                 loader: 'url-loader',
                 options: {
-                  limit: 500000
+                  limit: 5000000
                 }
               }
             ]

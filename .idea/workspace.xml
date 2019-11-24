@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb43443c-395c-4f9f-9a8e-97734bb4c301" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +82,10 @@
       <workItem from="1573818780707" duration="39000" />
       <workItem from="1573892565458" duration="9000" />
       <workItem from="1573958681265" duration="217000" />
+      <workItem from="1574235849172" duration="100000" />
+      <workItem from="1574258258058" duration="580000" />
+      <workItem from="1574305266482" duration="267000" />
+      <workItem from="1574575580793" duration="719000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,10 @@
 <template>
+<div class="login_container">    
 
-    <div class="login_container" >
+
         <div class="login_box" >
             <div class="acatar_box" >
-                <img src="../../static/loginicon.jpg" alt="" class="" >
+                <img src="../../static/img/loginicon.jpg" alt="" class="" >
             </div>
 
             
@@ -25,7 +26,7 @@
             </div>
         
         </div>
-    </div>
+</div>
 
 </template>
 <script>
@@ -71,7 +72,7 @@
                     window.sessionStorage.setItem('token',this.loginToken.token);
                     // this.$router.push('../../src/testHtml/elements/elements_xgjc.html')
                     window.location.href=
-                    'https://zhanghuaqian.github.io/2019ABC/index.htm'
+                    'https://zhanghuaqian.github.io/testHTML/index.html'
                     
                 }
                 else{
@@ -140,5 +141,6 @@
 
     }
 
+   
 </style>
 
